@@ -12,8 +12,7 @@ namespace Vidly.Controllers
         {
             return View();
         }
-        //salut
-
+        //sal
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
