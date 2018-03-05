@@ -9,17 +9,20 @@ namespace Vidly.Models
     public class Movie
     {
         public int Id { get; set; }
-        [Required(ErrorMessage = "Please insert customer's name")]
+        [Required(ErrorMessage = "Please insert name")]
+        
         public string Name { get; set; }
 
         [DataType(DataType.Date)]
         [Display(Name = "Release Date")]
-        public DateTime? ReleaseDate { get; set; }
+        [Required(ErrorMessage = "Please insert release date")]
+        public DateTime ReleaseDate { get; set; }
 
         [DataType(DataType.Date)]
         public DateTime? DateAdded { get; set; }
 
         [Display(Name = "Numbre in Stock")]
+        [StockValidation]
         public int Cuntity { get; set; }
 
         public  Genres Genres { get; set; }

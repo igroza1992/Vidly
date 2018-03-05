@@ -263,6 +263,14 @@
     <Compile Include="Migrations\201803022133449_customeUpdate2.Designer.cs">
       <DependentUpon>201803022133449_customeUpdate2.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201803051905175_updateModel.cs" />
+    <Compile Include="Migrations\201803051905175_updateModel.Designer.cs">
+      <DependentUpon>201803051905175_updateModel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201803051916160_updateModel1.cs" />
+    <Compile Include="Migrations\201803051916160_updateModel1.Designer.cs">
+      <DependentUpon>201803051916160_updateModel1.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Customer.cs" />
@@ -270,7 +278,9 @@
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\MembershiType.cs" />
+    <Compile Include="Models\Min18YersIfAMember.cs" />
     <Compile Include="Models\Movie.cs" />
+    <Compile Include="Models\StockValidation.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
     <Compile Include="ViewModels\NewMoviesViewModel.cs" />
@@ -400,6 +410,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201803022133449_customeUpdate2.resx">
       <DependentUpon>201803022133449_customeUpdate2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803051905175_updateModel.resx">
+      <DependentUpon>201803051905175_updateModel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201803051916160_updateModel1.resx">
+      <DependentUpon>201803051916160_updateModel1.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
